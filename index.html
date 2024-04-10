@@ -1,20 +1,78 @@
 <html>
-<head>
-</head>
-<title>Hello world</title>
-<link rel="stylesheet" href="style.css"/>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MY PORTFOLIO</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
 <body>
 	<header>
-		<h2 class="logo">Kev<h2/>
+		<div class="logo">
+			<img src="assets/icon/partner.png" alt="logo" class="logo-img">
+			<h2 class="logo-title">ES<h2/>
+		</div>
+	
 		<nav>
 			<ul>
 				<li><a href="#">TENTANG</a></li>
-				<li><a href="#">ABOUT</a></li>
-				<li><a href="#">FOLLOW</a></li>
-				<button class="btn-cta">Follow saya</button>
+				<li><a href="#jasa">Hobi</a></li>
+				<li><a href="mailto:kevinnapitupullu2020@gmail.com">KONTAK</a></li>
+				
 			</ul>
+			<button class="btn-cta" onclick="redirInstagram()">Follow saya</button>
 		</nav>
 	</header>
+	<div class="container">
+		<div class="intro">
+			<p class="title">Hello, I'm Kevin</p>
+			<p class="description">Back end Developer </P>
+			<img src="assets/foto/kevinpic.jpg" alt="kevin foto" class="img-foto"/>
+	</div>
+	
+	<div class="paralax">
+		<div class="tentang">
+			<p class="card-title">Saya adalah programmer</p>
+			<p class="card-description">No stuct to fullstack </P>
+			<div class="mt-10">
+				<button class="btn-cta" onclick="redirWhatsapp()">Mari kerjasama</button>
+			</div>
+		</div>
+		<div class="container">
+			
+			<div class="cards" id="jasa">
+				<div class="card-item">
+					<img src="assets/icon/24-hours.png" alt="icon 1" class="icon">
+						<p class="card-title">Tepat Waktu</p>
+						<p class="card-description">Ngopi adalah sebagian dari kehidupan  </P>
+				</div>
+				<div class="card-item">
+					<img src="assets/icon/hot-deal.png" alt="icon 2" class="icon">
+						<p class="card-title">Biaya Terjangkau</p>
+						<p class="card-description">Kami selalu mengusahaan untuk memberi harga yang stabil dengan pelayanan prima</P>
+				</div>
+				<div class="card-item">
+					<img src="assets/icon/rating.png" alt="icon 3" class="icon">
+						<p class="card-title">Saya suka Ngopi</p>
+						<p class="card-description">Ngopi adalah sebagian dari kehidupan  </P>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="foot">
+		<p class="title">&copy; Kevin website 2024</p>
+	</footer>
+	
+	<script>
+	function redirInstagram()
+	{
+		window.location.href = "https://instagram.com"
+	}
+	function redirWhatsapp()
+	}
+		window.location.href = "https://wa.me/+6282275339157"
+	{
+</script>
 </body>
+
 
 </html>

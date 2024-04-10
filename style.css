@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Helvetica;
+	scroll-behavior: smooth;
 }
 
 header {
@@ -14,12 +15,22 @@ header {
 	gap:10px
 }
 
-.logo {
-	margin-right: auto;
+.logo-title {
+	
 	margin-left: 10px;
 	cursor: pointer;
-	 
 	transition: all .5s ease 0s;
+}
+.logo {
+	margin-right: auto;
+	display: flex;
+	gap:6px;
+}
+.logo-img {
+	margin-right: auto;
+	width: 35px;
+	height: 35px
+	margin-left: 10px;
 }
 .logo:hover {
 	color: #FF6A3D;
@@ -28,7 +39,7 @@ header {
 .btn-cta{
 	margin-right: 10px;
 	border: none;
-	font-size:20;
+	font-size:20px;
 	padding: 6px 12px;
 	background: #FF6A3D;
 	color: #eaeaea;
@@ -55,4 +66,114 @@ li a {
 a {
 	color: #eaeaea;
 	text-decoration: none;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px 0;
+	text-align: center;
+}
+.title {
+	font-size: 24px;
+	font-weight: bold;
+}
+.description {
+	font-size: 28px;
+	font-weight: border;
+}
+
+.img-foto{
+	width: 100%; 
+	height: auto;
+	padding: 10px;
+	max-width: 500px;
+}
+
+.paralax {
+	background-image: url('assets/foto/cutegirl.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	height: 100vh;
+	
+}
+
+.tentang {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #1A2238;
+	color: #eaeaea;
+	padding:50px;
+	
+}
+.mt-10 {
+	margin-top: 20px;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+.card-item {
+	text-align: center;
+	margin: 10px;
+	width: 25%;
+	background: #f7f7f7;
+	color:#222;
+	padding: 25px;
+	box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5)
+
+}
+.card-title {
+ font-size: 18px;
+ font-weight: bolder;
+}
+.card-description {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.icon {
+	width: 75px;
+	height: 75px;
+	margin: 10px;
+	padding: 4px;
+}
+.foot {
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: #1A2238;
+}
+@media screen and (max-width: 500px) {
+	.card {
+		flex-direction: column;
+		gap: 0;
+		
+	}
+	.card-item {
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	.intro {
+		margin-top: 20px;
+	}
+	.img-foto {
+		padding: 0;
+	}
 }
